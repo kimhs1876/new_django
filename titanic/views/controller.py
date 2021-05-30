@@ -9,7 +9,7 @@ class Controller(object):
     def modeling(self, train, test) -> object:
         service = self.service
 
-    def preprocess(self, train) -> object:
+    def preprocess(self, train) -> object: # Practice more
         service = self.service
         this = self.dataset
         this.train = service.new_model(train)

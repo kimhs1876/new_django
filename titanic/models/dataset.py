@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 @dataclass
-class Dataset(object):
+class Dataset(object): # practice more
     context: str
     fname: str
     train: str

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="370ebfd1-d507-449c-8562-4046693194eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/models/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/views/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/views/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webscarp/naver_movie2.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscarp/naver_movie2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
