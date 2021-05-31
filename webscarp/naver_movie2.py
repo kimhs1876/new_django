@@ -15,4 +15,5 @@ class NaverMovies(object):
 
 if __name__ == '__main__':
     naver = NaverMovies()
-    
+    naver.scrap()
+
