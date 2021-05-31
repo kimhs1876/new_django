@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="370ebfd1-d507-449c-8562-4046693194eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/titanic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/models/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/models/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/templates/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/templates/plot.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/titanic/models/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/dataset.py" afterDir="false" />
+>>>>>>> dcd8d7dd7232544c60e9c60c7813019f5622e2ea
       <change beforePath="$PROJECT_DIR$/titanic/views/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/views/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webscarp/naver_movie2.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscarp/naver_movie2.py" afterDir="false" />
     </list>

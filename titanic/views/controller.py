@@ -14,7 +14,11 @@ class Controller(object):
         this.train = service.create_train(this)
         return this # 데이터 프레임 !! 매우중요 !! 차트로 그리기 위해서 데이터프레임이여야 한다.
 
+<<<<<<< HEAD
     def preprocess(self, train, test):
+=======
+    def preprocess(self, train) -> object: # Practice more
+>>>>>>> dcd8d7dd7232544c60e9c60c7813019f5622e2ea
         service = self.service
         this = self.dataset
         this.train = service.new_model(train)

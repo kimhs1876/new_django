@@ -2,8 +2,12 @@ from dataclasses import dataclass
 
 
 @dataclass
+<<<<<<< HEAD
 class Dataset(object):
 
+=======
+class Dataset(object): # practice more
+>>>>>>> dcd8d7dd7232544c60e9c60c7813019f5622e2ea
     context: str
     fname: str
     train: str
