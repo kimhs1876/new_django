@@ -32,8 +32,3 @@ if __name__ == '__main__':
     naver = NaverMovies()
     naver.scrap()
 
-<<<<<<< HEAD
-=======
-
-    
->>>>>>> dcd8d7dd7232544c60e9c60c7813019f5622e2ea

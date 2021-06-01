@@ -2,6 +2,7 @@ from titanic.views.controller import Controller
 from titanic.templates.plot import Plot
 
 if __name__ == '__main__':
+    controller = Controller()
     while 1:
         menu = input('0-exit 1-data visualization\n'
                      ' 2-modeling\n'
@@ -16,8 +17,7 @@ if __name__ == '__main__':
             plot.draw_sex()
             plot.draw_embarked()
         elif menu == '2':
-            controller = Controller()
-            controller.modeling('train.csv','test.csv')
+            df = controller.modeling('train.csv','test.csv') #훅
 
         # 2를 눌렀더니 콘트롤러가 나온다.
         elif menu == '3':

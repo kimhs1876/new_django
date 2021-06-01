@@ -15,7 +15,7 @@ class Plot(object):
         self.entity = self.service.new_model(fname)
 
     def draw_survived_dead(self):
-        this = self.entity # 원본데이터는 건들지 않고 카피데이터를 사용하겠다는 의미
+        this = self.entity
         # print(f'The data type of Train is {type(this.train)}.')
         # print(f'Columns of Train is {this.train.columns}.')
         # print(f'The top 5 superior data are {this.train.head}.')
@@ -28,31 +28,60 @@ class Plot(object):
         sns.countplot('Survived', data=this, ax=ax[1])
         plt.show()
 
-    def draw_Pclass(self):
+    def draw_pclass(self): #?
         this = self.entity
-        f, ax = plt.subplots(1, 2, figsize = (18, 8))
-        this['Pclass'].value_counts().plot.pie(explode=[0,0,0.1], autopct='%1.1f%%', ax=ax[0], shadow=True)
-        ax[0].set_title('1.일등석 vs 2.이등석 vs 3.삼등석')
-        ax[0].set_ylabel('')
-        ax[1].set_title('1.일등석 vs 2.이등석 vs 3.삼등석')
-        sns.countplot('Pclass', data=this, ax=ax[1])
+        this['생존결과'] = this['Survived']\
+            .replace(0, '사망자').replace(1, '생존자')
+        this['Pclass'] = this['Pclass'].replace(1,'1등석').replace(2,'2등석').replace(3,'3등석')
+        sns.countplot(data=this, x='좌석등급', hue='생존결과')
         plt.show()
-
 
     def draw_sex(self):
         this = self.entity
         f, ax = plt.subplots(1, 2, figsize = (18, 8))
         this['Survived'][this['Sex'] == 'male'].value_counts().plot.pie(explode=[0, 0.1], autopct='%1.1f%%', ax=ax[0], shadow=True)
-        this['Survived'][this['Sex'] == 'female'].value_counts().plot.pie(explode=[0, 0.1], autopct='%1.1f%%', ax=ax[1],
-                                                                        shadow=True)
-        ax[0].set_title('남성의 생존비율 [1.사망자 vs 2.생존자]')
-        ax[1].set_title('여성의 생존비율 [1.사망자 vs 2.생존자]')
+        this['Survived'][this['Sex'] == 'female'].value_counts().plot.pie(explode=[0, 0.1], autopct='%1.1f%%', ax=ax[1], shadow=True)
+        ax[0].set_title('남성의 생존비율 [0.사망자 vs 1.생존자]')
+        ax[1].set_title('여성의 생존비율 [0.사망자 vs 1.생존자]')
         plt.show()
 
-    def draw_embarked(self):
+    def draw_embarked(self): #?
         this = self.entity
-        this['생존결과'] = this['Survived'].replace(0, '사망자').replace(1,'생존자')
-        this['승선항구'] = this['Embarked'].replace("C",'쉘버그').replace("S",'사우스햄톤').replace("Q", '퀸즈타운')
-        sns.countplot(data=this, x='승선항구', hue='생존결과') # this는 데이터프레임
+        this['생존결과'] = this['Survived'] \
+            .replace(0, '사망자').replace(1, '생존자')
+        this['승선항구'] = this['Embarked'] \
+            .replace("C", '쉘버그').replace("S", '사우스햄톤').replace("Q", '퀸즈타운')
+        sns.countplot(data=this, x='승선항구', hue='생존결과')
         plt.show()
 
+'''
+The data type of Train is <class 'pandas.core.frame.DataFrame'>.
+Columns of Train is Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
+       'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'],
+      dtype='object').
+The top 5 superior data are <bound method NDFrame.head of      PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+0              1         0       3  ...   7.2500   NaN         S
+1              2         1       1  ...  71.2833   C85         C
+2              3         1       3  ...   7.9250   NaN         S
+3              4         1       1  ...  53.1000  C123         S
+4              5         0       3  ...   8.0500   NaN         S
+..           ...       ...     ...  ...      ...   ...       ...
+886          887         0       2  ...  13.0000   NaN         S
+887          888         1       1  ...  30.0000   B42         S
+888          889         0       3  ...  23.4500   NaN         S
+889          890         1       1  ...  30.0000  C148         C
+890          891         0       3  ...   7.7500   NaN         Q
+[891 rows x 12 columns]>.
+The top 5 inferior data are <bound method NDFrame.tail of      PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+0              1         0       3  ...   7.2500   NaN         S
+1              2         1       1  ...  71.2833   C85         C
+2              3         1       3  ...   7.9250   NaN         S
+3              4         1       1  ...  53.1000  C123         S
+4              5         0       3  ...   8.0500   NaN         S
+..           ...       ...     ...  ...      ...   ...       ...
+886          887         0       2  ...  13.0000   NaN         S
+887          888         1       1  ...  30.0000   B42         S
+888          889         0       3  ...  23.4500   NaN         S
+889          890         1       1  ...  30.0000  C148         C
+890          891         0       3  ...   7.7500   NaN         Q
+'''
