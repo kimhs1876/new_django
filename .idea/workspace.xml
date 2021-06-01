@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="370ebfd1-d507-449c-8562-4046693194eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/titanic/models/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/models/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/templates/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/templates/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/views/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/views/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webscarp/naver_movie2.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscarp/naver_movie2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
       <recent name="C:\Users\bitcamp\kimhs\django\titanic\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.naver_movie">
+  <component name="RunManager" selected="Python.__init__">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="django" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.naver_movie" />
         <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.naver_movie" />
         <item itemvalue="Python.melon_music" />
         <item itemvalue="Python.bugs_music2" />
         <item itemvalue="Python.conversion" />
