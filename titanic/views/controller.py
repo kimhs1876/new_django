@@ -8,7 +8,11 @@ class Controller(object):
     service = Service()
 
     def modeling(self, train, test) -> object:
+<<<<<<< HEAD
         service = self.service #?
+=======
+        service = self.service
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
         this = self.preprocess(train, test)
         this.label = service.create_label(this)
         this.train = service.create_train(this)
@@ -23,9 +27,18 @@ class Controller(object):
         # 불필요한 feature (Cabin, Ticket) 제거
         this = service.drop_feature(this, 'Cabin')
         this = service.drop_feature(this, 'Ticket')
+<<<<<<< HEAD
         # nominal, ordinal 로 정형화
         this = service.embarked_nominal(this) #?
         this = service.title_nominal(this) #?
+=======
+        # norminal, ordinal 로 정형화
+        this = service.embarked_nominal(this)
+        this = service.title_norminal(this)
+        # 불필요한 feature (Name) 제거
+        this = service.drop_feature(this, 'Name')
+        this = service.gender_norminal(this)
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
         self.print_this(this)
 
         return this

@@ -12,12 +12,23 @@ if __name__ == '__main__':
             break
         elif menu == '1':
             plot = Plot('train.csv')
+<<<<<<< HEAD
             # plot.draw_survived_dead()
             # plot.draw_pclass()
             # plot.draw_sex()
             plot.draw_embarked()
         elif menu == '2':
             df = controller.modeling('train.csv','test.csv')
+=======
+            plot.draw_survived_dead()
+            plot.draw_Pclass()
+            plot.draw_sex()
+            plot.draw_embarked()
+        elif menu == '2':
+            df = controller.modeling('train.csv','test.csv') #훅
+
+        # 2를 눌렀더니 콘트롤러가 나온다.
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
         elif menu == '3':
             pass
         elif menu == '4':

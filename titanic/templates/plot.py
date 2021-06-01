@@ -28,7 +28,11 @@ class Plot(object):
         sns.countplot('Survived', data=this, ax=ax[1])
         plt.show()
 
+<<<<<<< HEAD
     def draw_pclass(self):
+=======
+    def draw_pclass(self): #?
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
         this = self.entity
         this['생존결과'] = this['Survived']\
             .replace(0, '사망자').replace(1, '생존자')
@@ -45,7 +49,11 @@ class Plot(object):
         ax[1].set_title('여성의 생존비율 [0.사망자 vs 1.생존자]')
         plt.show()
 
+<<<<<<< HEAD
     def draw_embarked(self):
+=======
+    def draw_embarked(self): #?
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
         this = self.entity
         this['생존결과'] = this['Survived'] \
             .replace(0, '사망자').replace(1, '생존자')

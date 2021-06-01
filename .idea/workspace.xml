@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="370ebfd1-d507-449c-8562-4046693194eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/titanic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/models/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/templates/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/templates/plot.py" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/titanic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/models/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/models/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic/templates/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/templates/plot.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/titanic/models/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/models/dataset.py" afterDir="false" />
+>>>>>>> dcd8d7dd7232544c60e9c60c7813019f5622e2ea
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
       <change beforePath="$PROJECT_DIR$/titanic/views/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/views/controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,27 +95,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="conversion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="django" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/basic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic/conversion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="melon_music" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="django" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,13 +137,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/titanic/templates" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/titanic/templates/plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.__init__" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="Python.plot" />
+>>>>>>> 4fc54fa54ad8a3abe242235691d868ffbd89423d
         <item itemvalue="Python.naver_movie" />
         <item itemvalue="Python.melon_music" />
         <item itemvalue="Python.bugs_music2" />
-        <item itemvalue="Python.conversion" />
       </list>
     </recent_temporary>
   </component>

@@ -1,6 +1,9 @@
 from dataclasses import dataclass
+
+
 @dataclass
-class Dataset(object): # practice more
+class Dataset(object):
+
     context: str
     fname: str
     train: str
@@ -12,7 +15,8 @@ class Dataset(object): # practice more
     def context(self) -> str: return self._context
 
     @context.setter
-    def context(self, context): self._context = context
+    def context(self, context):
+        self._context = context
 
     @property
     def fname(self) -> str: return self._fname
@@ -35,12 +39,11 @@ class Dataset(object): # practice more
     @property
     def id(self) -> str: return self._id
 
-    @id.setter
+    @context.setter
     def id(self, id): self._id = id
 
     @property
     def label(self) -> str: return self._label
 
-    @label.setter
+    @context.setter
     def label(self, label): self._label = label
-

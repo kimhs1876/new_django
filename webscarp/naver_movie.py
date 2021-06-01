@@ -5,7 +5,7 @@ import pandas as pd
 class NaverMovie(object):
 
     url = 'https://movie.naver.com/movie/sdb/rank/rmovie.nhn'
-    dirver_path = 'C:/Program Files/Google/Chrome/chromedriver'
+    driver_path = 'C:/Program Files/Google/Chrome/chromedriver'
     class_name =''
     title_ls = []
     dict ={}
